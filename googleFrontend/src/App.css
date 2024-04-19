@@ -1,0 +1,45 @@
+
+.header{
+  height: 100px;
+  text-align:center;
+  background-color: antiquewhite;
+  padding: 25px;
+
+}
+.heading{
+  text-align: center;
+}
+List{
+  padding: 20px;
+}
+.inputfield{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 500px;
+  padding: 20px;
+}
+.grid-colamn{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 775px;
+  margin: 10dp;
+}
+.card {
+  align-items: center;
+}
+.card-img-top{
+  object-fit: cover;
+  width: 20rem;
+  height: 20rem;
+  
+}
+.box{
+  display: block;
+  align-content: center;
+  width: 750px;
+  margin:  auto;
+  background-color: rgb(206, 216, 214);
+  color: black;
+  border-radius: 20px;
+
+}

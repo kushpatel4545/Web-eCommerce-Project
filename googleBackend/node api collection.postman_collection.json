@@ -1,0 +1,615 @@
+{
+	"info": {
+		"_postman_id": "585a053e-0063-403c-9915-f1c054404ff6",
+		"name": "node api collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33004630"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "http://localhost:8000/api/product/googleProduct",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/product/googleProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product",
+								"googleProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/product/updateGoogleProduct/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"productName\": \"pixel 8\",\r\n        \"productDescription\": \"just good phone\",\r\n        \"productImage\": \"pixel 8.png\",\r\n        \"productPrice\": 999,\r\n        \"productShippingCost\": 59\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/product/updateGoogleProduct/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product",
+								"updateGoogleProduct",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "661578e5f2e01638b89f717c"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/product/createGoogleProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n        \"productName\": \"pixel 7\",\r\n        \"productDescription\": \"AI camera\",\r\n        \"productImage\": \"pixel7.png\",\r\n        \"productPrice\": 799,\r\n        \"productShippingCost\": 25\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/product/createGoogleProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product",
+								"createGoogleProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/product/deleteGoogleProduct/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/product/deleteGoogleProduct/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product",
+								"deleteGoogleProduct",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "661578e5f2e01638b89f717c"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "http://localhost:8000/api/user/googleUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"just\",\r\n   \"userEmail\" : \"just@gmail.com\",\r\n    \"password\" : \"12354\",\r\n    \"userPurchaseHistory\" : \"1 pixel 6 \",\r\n    \"userShippingAddress\" : \"king street north, waterloo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/user/createGoogleUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"createGoogleUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/user/googleUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/user/googleUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"googleUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/user/updateGoogleUser/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"username\" : \"jay\",\r\n   \"userEmail\" : \"jay@gmail.com\",\r\n    \"password\" : \"12354\",\r\n    \"userPurchaseHistory\" : \"1 pixel 7 \",\r\n    \"userShippingAddress\" : \"king street north, waterloo\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/user/updateGoogleUser/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"updateGoogleUser",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6615796ef2e01638b89f7182"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/user/deleteGoogleUser/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/user/deleteGoogleUser/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"deleteGoogleUser",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6615796ef2e01638b89f7182"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "http://localhost:8000/api/order/createGoogleOrder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderUserID\":\"34322423432ad3\",\r\n    \"orderProductID\":\"46546465ad4646d\",\r\n    \"OrderQTY\":5,\r\n    \"orderTotal\":8699\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/order/createGoogleOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"order",
+								"createGoogleOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/order/googleOrder",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/order/googleOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"order",
+								"googleOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/order/updateGoogleOrder/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderUserID\":\"34322423432ad3\",\r\n    \"orderProductID\":\"46546465ad4646d\",\r\n    \"OrderQTY\":3,\r\n    \"orderTotal\":5699\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/order/updateGoogleOrder/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"order",
+								"updateGoogleOrder",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "661579cbf2e01638b89f7188"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/order/deleteGoogleOrder/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/order/deleteGoogleOrder/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"order",
+								"deleteGoogleOrder",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "661579cbf2e01638b89f7188"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "http://localhost:8000/api/cart/createGoogleCart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cartUserID\":\"64564465da5646sd654\",\r\n    \"cartProdutID\":\"46544654655sd6465d\",\r\n    \"productQty\":5,\r\n    \"cartTotal\":5599\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/cart/createGoogleCart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"cart",
+								"createGoogleCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/cart/googleCart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/cart/googleCart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"cart",
+								"googleCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/cart/updateGoogleCart/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cartUserID\":\"64564465da5646sd654\",\r\n    \"cartProdutID\":\"46544654655sd6465d\",\r\n    \"productQty\":6,\r\n    \"cartTotal\":6999\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/cart/updateGoogleCart/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"cart",
+								"updateGoogleCart",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6615565ff2c97ccf6ab5c693"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/cart/deleteGoogleCart/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/cart/deleteGoogleCart/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"cart",
+								"deleteGoogleCart",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "66157a38f2e01638b89f718d"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "http://localhost:8000/api/comment/createGoogleComment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"commentUserID\":\"46546464sd45646d654d454\",\r\n    \"commentProductID\":\"156464645454ddfd46464d5\",\r\n    \"userRating\":4.5,\r\n    \"commentImages\": \"commnet2.png\",\r\n    \"CommentText\" : \"good ai phone and long battery life\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/comment/createGoogleComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"comment",
+								"createGoogleComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/comment/googleComment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/comment/googleComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"comment",
+								"googleComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/comment/updateGoogleComment/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"commentUserID\":\"46546464sd45646d654d454\",\r\n    \"commentProductID\":\"156464645454ddfd46464d5\",\r\n    \"userRating\":3.5,\r\n    \"commentImages\": \"commnet.png\",\r\n    \"CommentText\" : \"good ai phone and long battery life\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/comment/updateGoogleComment/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"comment",
+								"updateGoogleComment",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "66157a8cf2e01638b89f7192"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/comment/deleteGoogleComment/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/comment/deleteGoogleComment/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"comment",
+								"deleteGoogleComment",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "66157a8cf2e01638b89f7192"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
