@@ -1,3 +1,22 @@
+# To Run this code 
+1. install the node module in the frontend folder
+   ### npm i
+
+2. to run Frontend
+   ### npm start
+3. to run the backend
+   ### node app.js
+# features
+1. all the projects on the home page and all products coming from the database. The product will be added when you click on the add to cart.
+2. A cart page where you can see all your cart products.
+3. You have to log in before finalizing the purchase
+4. User can log in and register
+5. The user can also Logout
+6. On the Order page, you can see all orders
+7. All input forms have validation with proper error messages.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
